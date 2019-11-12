@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/macrofibras/static/css/main.b100e6da.chunk.css",
-    "main.js": "/macrofibras/static/js/main.a21cb72b.chunk.js",
-    "main.js.map": "/macrofibras/static/js/main.a21cb72b.chunk.js.map",
+    "main.js": "/macrofibras/static/js/main.99cf6367.chunk.js",
+    "main.js.map": "/macrofibras/static/js/main.99cf6367.chunk.js.map",
     "runtime-main.js": "/macrofibras/static/js/runtime-main.9d39a23d.js",
     "runtime-main.js.map": "/macrofibras/static/js/runtime-main.9d39a23d.js.map",
-    "static/js/2.cf72863e.chunk.js": "/macrofibras/static/js/2.cf72863e.chunk.js",
-    "static/js/2.cf72863e.chunk.js.map": "/macrofibras/static/js/2.cf72863e.chunk.js.map",
+    "static/js/2.ed57ad7c.chunk.js": "/macrofibras/static/js/2.ed57ad7c.chunk.js",
+    "static/js/2.ed57ad7c.chunk.js.map": "/macrofibras/static/js/2.ed57ad7c.chunk.js.map",
     "index.html": "/macrofibras/index.html",
-    "precache-manifest.04be95680d1fae375bcc2819ea2ce36c.js": "/macrofibras/precache-manifest.04be95680d1fae375bcc2819ea2ce36c.js",
+    "precache-manifest.2aeb2119e89243fa4536983894f44d54.js": "/macrofibras/precache-manifest.2aeb2119e89243fa4536983894f44d54.js",
     "service-worker.js": "/macrofibras/service-worker.js",
     "static/css/main.b100e6da.chunk.css.map": "/macrofibras/static/css/main.b100e6da.chunk.css.map",
     "static/media/logo.svg": "/macrofibras/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9d39a23d.js",
-    "static/js/2.cf72863e.chunk.js",
+    "static/js/2.ed57ad7c.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.a21cb72b.chunk.js"
+    "static/js/main.99cf6367.chunk.js"
   ]
 }
