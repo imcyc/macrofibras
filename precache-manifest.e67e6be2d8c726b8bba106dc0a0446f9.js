@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "247651bae5e5bc0b5ac4d0ea33a0ec14",
+    "revision": "1ce4c56e37bd46b16ddd50b98fde2914",
     "url": "/macrofibras/index.html"
   },
   {
-    "revision": "8fe40d0c074e8fc6b099",
+    "revision": "92af1114599657dc4492",
     "url": "/macrofibras/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "d9413c0c20c2eb2e16c4",
+    "revision": "e646618ccc6ad0ae7f40",
     "url": "/macrofibras/static/css/main.1d894206.chunk.css"
   },
   {
-    "revision": "8fe40d0c074e8fc6b099",
-    "url": "/macrofibras/static/js/2.1c138581.chunk.js"
+    "revision": "92af1114599657dc4492",
+    "url": "/macrofibras/static/js/2.dd97cebc.chunk.js"
   },
   {
-    "revision": "d9413c0c20c2eb2e16c4",
-    "url": "/macrofibras/static/js/main.eca0561b.chunk.js"
+    "revision": "e646618ccc6ad0ae7f40",
+    "url": "/macrofibras/static/js/main.410d7d9c.chunk.js"
   },
   {
     "revision": "2726681bc3013b169361",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/media/losas_cimentacion.e31835d3.jpg"
   },
   {
+    "revision": "f08dcba9aba3ded470a4d0150754d999",
+    "url": "/macrofibras/static/media/malla.f08dcba9.jpg"
+  },
+  {
     "revision": "9be71f0d6249541853f4099a11ad0f04",
     "url": "/macrofibras/static/media/muro_concreto.9be71f0d.jpg"
   },
@@ -42,5 +46,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a8bc6a0847985af063cb6c387e10503b",
     "url": "/macrofibras/static/media/prefabricados.a8bc6a08.jpg"
+  },
+  {
+    "revision": "da04727b033f6824d6e000fbdbed12d9",
+    "url": "/macrofibras/static/media/varilla.da04727b.jpg"
   }
 ]);
