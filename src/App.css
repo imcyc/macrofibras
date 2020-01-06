@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+a {
+  color: #ea8823;
+}
+
 .App-logo {
   height: 40vmin;
 }
