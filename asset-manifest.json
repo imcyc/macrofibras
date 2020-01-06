@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/macrofibras/static/css/main.96ee8187.chunk.css",
-    "main.js": "/macrofibras/static/js/main.12841f73.chunk.js",
-    "main.js.map": "/macrofibras/static/js/main.12841f73.chunk.js.map",
+    "main.css": "/macrofibras/static/css/main.66be3b64.chunk.css",
+    "main.js": "/macrofibras/static/js/main.3fa82607.chunk.js",
+    "main.js.map": "/macrofibras/static/js/main.3fa82607.chunk.js.map",
     "runtime-main.js": "/macrofibras/static/js/runtime-main.9d39a23d.js",
     "runtime-main.js.map": "/macrofibras/static/js/runtime-main.9d39a23d.js.map",
     "static/css/2.17e5ed98.chunk.css": "/macrofibras/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.f40cddec.chunk.js": "/macrofibras/static/js/2.f40cddec.chunk.js",
-    "static/js/2.f40cddec.chunk.js.map": "/macrofibras/static/js/2.f40cddec.chunk.js.map",
+    "static/js/2.a563f844.chunk.js": "/macrofibras/static/js/2.a563f844.chunk.js",
+    "static/js/2.a563f844.chunk.js.map": "/macrofibras/static/js/2.a563f844.chunk.js.map",
     "index.html": "/macrofibras/index.html",
-    "precache-manifest.851301b3ef164095c693a459d0005588.js": "/macrofibras/precache-manifest.851301b3ef164095c693a459d0005588.js",
+    "precache-manifest.4ec4fcff4d4fd22cd5bd4e0ee3a9fedd.js": "/macrofibras/precache-manifest.4ec4fcff4d4fd22cd5bd4e0ee3a9fedd.js",
     "service-worker.js": "/macrofibras/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/macrofibras/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.96ee8187.chunk.css.map": "/macrofibras/static/css/main.96ee8187.chunk.css.map"
+    "static/css/main.66be3b64.chunk.css.map": "/macrofibras/static/css/main.66be3b64.chunk.css.map",
+    "static/media/capas_compresion.jpg": "/macrofibras/static/media/capas_compresion.4956a05f.jpg",
+    "static/media/losas_cimentacion.jpg": "/macrofibras/static/media/losas_cimentacion.e31835d3.jpg",
+    "static/media/muro_concreto.jpg": "/macrofibras/static/media/muro_concreto.9be71f0d.jpg",
+    "static/media/piso_industrial.jpg": "/macrofibras/static/media/piso_industrial.c57d982a.jpg",
+    "static/media/prefabricados.jpg": "/macrofibras/static/media/prefabricados.a8bc6a08.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9d39a23d.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.f40cddec.chunk.js",
-    "static/css/main.96ee8187.chunk.css",
-    "static/js/main.12841f73.chunk.js"
+    "static/js/2.a563f844.chunk.js",
+    "static/css/main.66be3b64.chunk.css",
+    "static/js/main.3fa82607.chunk.js"
   ]
 }
