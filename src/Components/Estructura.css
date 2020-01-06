@@ -16,6 +16,8 @@
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+  width: 100%;
+  justify-content: center;
 }
 .wpestructuras .estructuras .secciones {
   padding: 20px;

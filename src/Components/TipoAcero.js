@@ -6,6 +6,7 @@ function TipoAcero(props) {
   return(
     <div className="wpestructuras">
       <Titulo tituloEstructura={props.titulo} />
+      <h2 style={{color: '#ea8823'}}>{props.match.params.tipo}</h2>
       <hr/>
       <div className="estructuras">
         {props.tipoAcero.map((acero, index) => (

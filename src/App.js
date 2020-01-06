@@ -79,7 +79,7 @@ function App() {
               />
               <Route 
                 exact 
-                path="/tipo-de-acero" 
+                path="/tipo-de-acero/:tipo" 
                 component={(props) => <TipoAcero
                   titulo={"¿QUE TIPO DE ACERO DE REFUERZO QUEREMOS SUSTITUIR?"}
                   tipoAcero={tipoAcero}
