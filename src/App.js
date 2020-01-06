@@ -8,6 +8,8 @@ import capas from './images/capas_compresion.jpg';
 import losas from './images/losas_cimentacion.jpg';
 import muro from './images/muro_concreto.jpg';
 import prefabricados from './images/prefabricados.jpg';
+import malla from './images/malla.jpg';
+import varilla from './images/varilla.jpg';
 
 import './App.css';
 
@@ -34,6 +36,17 @@ function App() {
     {
       nombre: 'ELEMENTOS PREFABRICADOS',
       imagen: prefabricados
+    }
+  ]
+
+  const tipoAcero = [
+    {
+      nombre: 'MALLA ELECTROSOLDADA',
+      imagen: malla
+    },
+    {
+      nombre: 'VARILLA',
+      imagen: varilla
     }
   ]
 
@@ -68,7 +81,8 @@ function App() {
                 exact 
                 path="/tipo-de-acero" 
                 component={(props) => <TipoAcero
-                  titulo={"El acero"}
+                  titulo={"¿QUE TIPO DE ACERO DE REFUERZO QUEREMOS SUSTITUIR?"}
+                  tipoAcero={tipoAcero}
                   {...props}
                 />}
               />
