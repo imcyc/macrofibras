@@ -6,6 +6,11 @@ a {
   color: #ea8823;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .App-logo {
   height: 40vmin;
 }

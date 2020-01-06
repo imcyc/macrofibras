@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import Titulo from './Titulo';
 import Image from 'react-bootstrap/Image'
 import './Estructura.css';
 import piso from '../images/piso_industrial.jpg';
@@ -8,14 +8,10 @@ import losas from '../images/losas_cimentacion.jpg';
 import muro from '../images/muro_concreto.jpg';
 import prefabricados from '../images/prefabricados.jpg';
 
-function Estructura() {
+function Estructura(props) {
   return(
     <div className="wpestructuras">
-      <h1>CALCULADORA DE</h1>
-      <h2><Link to="/">MACROFIBRAS DE CONCRETO</Link></h2>
-      <p>Instituto Mexicano del Cemento y del Concreto A.C.</p>
-      <hr/>
-      <h3>¿Qué Tipo de Estructura quiere Elaborar?</h3>
+      <Titulo tituloEstructura={props.tituloEstructura} />
       <hr/>
       <div className="estructuras">
         <div className="secciones">
