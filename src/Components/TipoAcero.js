@@ -1,6 +1,6 @@
 import React from 'react';
 import Titulo from './Titulo';
-import Seccion from './Seccion';
+import SeccionAcero from './SeccionAcero';
 
 function TipoAcero(props) {
   return(
@@ -10,7 +10,7 @@ function TipoAcero(props) {
       <hr/>
       <div className="estructuras">
         {props.tipoAcero.map((acero, index) => (
-          <Seccion key={index} nombre={acero.nombre} imagen={acero.imagen} />
+          <SeccionAcero key={index} nombre={acero.nombre} imagen={acero.imagen} enlace={'/calcular'} eltipo={props.match.params.tipo} />
         ))}
       </div>
     </div>

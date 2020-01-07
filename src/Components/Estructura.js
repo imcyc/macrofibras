@@ -10,7 +10,7 @@ function Estructura(props) {
       <hr/>
       <div className="estructuras">
         {props.secciones.map((seccione, index) => (
-          <Seccion key={index} nombre={seccione.nombre} imagen={seccione.imagen} />
+          <Seccion key={index} nombre={seccione.nombre} imagen={seccione.imagen} enlace={'/tipo-de-acero'} />
         ))}
       </div>
     </div>

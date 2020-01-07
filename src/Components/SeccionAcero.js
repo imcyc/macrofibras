@@ -2,9 +2,12 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 
-function Seccion(props){
+function SeccionAcero(props){
   return(
-    <Link to={`${props.enlace}/${props.nombre}`}>
+    <Link to={{
+      pathname: `${props.enlace}/${props.nombre}/${props.eltipo}`,
+      laimagen: props.imagen
+      }}>
       <div className="secciones">
         <Image src={props.imagen} alt="Logo" roundedCircle fluid/>
         <h2>{props.nombre}</h2>
@@ -13,4 +16,4 @@ function Seccion(props){
   )
 }
 
-export default Seccion;
+export default SeccionAcero;

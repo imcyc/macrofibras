@@ -74,4 +74,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#53789a",endCo
   color: #09d3ac;
 }
 
+.calcular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 

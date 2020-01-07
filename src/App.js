@@ -3,6 +3,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from './Components/Home';
 import Estructura from './Components/Estructura';
 import TipoAcero from './Components/TipoAcero';
+import Calcular from './Components/Calcular';
 import piso from './images/piso_industrial.jpg';
 import capas from './images/capas_compresion.jpg';
 import losas from './images/losas_cimentacion.jpg';
@@ -14,7 +15,10 @@ import varilla from './images/varilla.jpg';
 import './App.css';
 
 function App() {
-  const [ tituloEstructura, useTituloEstructura ] =  useState("¿QUE TIPO DE ESTRUCTURA VA A ELABORAR?");
+  const [ tituloEstructura ] =  useState("¿QUE TIPO DE ESTRUCTURA VA A ELABORAR?");
+  const [ valorAcero, setValorAcero ] = useState();
+  const [ espesor, setEspesor ] = useState(0);
+  const [ resistencia, setResistencia ] = useState();
   
   const secciones = [
     {
@@ -52,7 +56,17 @@ function App() {
 
   const seleccionarEstructura = (e) => {
     e.preventDefault();
-    console.log("hola");
+  }
+
+  const tipoMalla= (e) => {
+    e.preventDefault();
+    setValorAcero(e.target.value)
+  }
+
+  const calcularDosificacion = (e) => {
+    e.preventDefault();
+    setEspesor(e.target.espesor.value);
+    console.log('espesor ' + espesor);
   }
 
   return (
@@ -83,6 +97,16 @@ function App() {
                 component={(props) => <TipoAcero
                   titulo={"¿QUE TIPO DE ACERO DE REFUERZO QUEREMOS SUSTITUIR?"}
                   tipoAcero={tipoAcero}
+                  {...props}
+                />}
+              />
+              <Route 
+                exact 
+                path="/calcular/:acero/:eltipo" 
+                component={(props) => <Calcular
+                  tipoMalla={tipoMalla}
+                  valorAcero={valorAcero}
+                  calcularDosificacion={calcularDosificacion}
                   {...props}
                 />}
               />
