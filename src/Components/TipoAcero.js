@@ -10,7 +10,13 @@ function TipoAcero(props) {
       <hr/>
       <div className="estructuras">
         {props.tipoAcero.map((acero, index) => (
-          <SeccionAcero key={index} nombre={acero.nombre} imagen={acero.imagen} enlace={'/calcular'} eltipo={props.match.params.tipo} />
+          <SeccionAcero 
+            key={index} 
+            nombre={acero.nombre} 
+            imagen={acero.imagen} 
+            enlace={'/calcular'} 
+            eltipo={props.match.params.tipo} 
+          />
         ))}
       </div>
     </div>
