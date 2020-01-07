@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/macrofibras/static/css/main.71e3432d.chunk.css",
-    "main.js": "/macrofibras/static/js/main.5225c8ff.chunk.js",
-    "main.js.map": "/macrofibras/static/js/main.5225c8ff.chunk.js.map",
+    "main.css": "/macrofibras/static/css/main.2f25c795.chunk.css",
+    "main.js": "/macrofibras/static/js/main.9fb15a15.chunk.js",
+    "main.js.map": "/macrofibras/static/js/main.9fb15a15.chunk.js.map",
     "runtime-main.js": "/macrofibras/static/js/runtime-main.9d39a23d.js",
     "runtime-main.js.map": "/macrofibras/static/js/runtime-main.9d39a23d.js.map",
     "static/css/2.17e5ed98.chunk.css": "/macrofibras/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.584effc7.chunk.js": "/macrofibras/static/js/2.584effc7.chunk.js",
-    "static/js/2.584effc7.chunk.js.map": "/macrofibras/static/js/2.584effc7.chunk.js.map",
+    "static/js/2.1669881d.chunk.js": "/macrofibras/static/js/2.1669881d.chunk.js",
+    "static/js/2.1669881d.chunk.js.map": "/macrofibras/static/js/2.1669881d.chunk.js.map",
     "index.html": "/macrofibras/index.html",
-    "precache-manifest.c554d065210548008d1abf76133b7245.js": "/macrofibras/precache-manifest.c554d065210548008d1abf76133b7245.js",
+    "precache-manifest.8b3039a19bdfda9d9ee3740daf688c67.js": "/macrofibras/precache-manifest.8b3039a19bdfda9d9ee3740daf688c67.js",
     "service-worker.js": "/macrofibras/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/macrofibras/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.71e3432d.chunk.css.map": "/macrofibras/static/css/main.71e3432d.chunk.css.map",
+    "static/css/main.2f25c795.chunk.css.map": "/macrofibras/static/css/main.2f25c795.chunk.css.map",
     "static/media/capas_compresion.jpg": "/macrofibras/static/media/capas_compresion.4956a05f.jpg",
+    "static/media/logo-imcyc.svg": "/macrofibras/static/media/logo-imcyc.8d68c4d6.svg",
     "static/media/losas_cimentacion.jpg": "/macrofibras/static/media/losas_cimentacion.e31835d3.jpg",
     "static/media/malla.jpg": "/macrofibras/static/media/malla.f08dcba9.jpg",
     "static/media/muro_concreto.jpg": "/macrofibras/static/media/muro_concreto.9be71f0d.jpg",
@@ -24,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.9d39a23d.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.584effc7.chunk.js",
-    "static/css/main.71e3432d.chunk.css",
-    "static/js/main.5225c8ff.chunk.js"
+    "static/js/2.1669881d.chunk.js",
+    "static/css/main.2f25c795.chunk.css",
+    "static/js/main.9fb15a15.chunk.js"
   ]
 }
