@@ -10,6 +10,7 @@ function Calcular(props) {
   const [ espesor, setEspesor ] = useState(0);
   const [ resistencia, setResistencia ] = useState(0);
   const [ total, setTotal ] = useState(0);
+  const [ dosificacion, setDosificacion ] = useState(0);
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
@@ -18,7 +19,10 @@ function Calcular(props) {
 
   const calcularDosificacion = (e) => {
     e.preventDefault();
-    setTotal(Number(espesor) + Number(resistencia))
+    setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
+
+    setDosificacion(((0.012 * 491 / 6 * Number(resistencia))/10).toFixed(2));
+
   }
 
   return(
@@ -36,6 +40,7 @@ function Calcular(props) {
             <Form.Group controlId="exampleForm.ControlSelect1">
               <Form.Label>SELECCIONE TIPO DE MAYA ELECTROSOLDADA:</Form.Label>
               <Form.Control as="select" onChange={props.tipoMalla}>
+                <option>SELECCIONAR</option>
                 <option value="61">Malla 6 x 6 - 10/10</option>
                 <option value="87">Malla 6 x 6 - 08/08</option>
                 <option value="123">Malla 6 x 6 - 06/06</option>
@@ -49,7 +54,7 @@ function Calcular(props) {
         <div style={{width:'100%'}}>
           {props.valorAcero ? 
             <div>
-              <h2>Área de acero en mm<sup>2</sup>/m</h2>
+              <h2>Área de acero en mm<sup>2</sup>/m:</h2>
               <h5 style={{fontWeight: 'bold',fontSize:'2em'}}>{props.valorAcero}</h5>
               {total === 0 ? 
                 <Form onSubmit={calcularDosificacion}>
@@ -77,10 +82,10 @@ function Calcular(props) {
                 <div>
                   <div className="resultados">
                     <div>
-                      <h3>RESULTADO</h3><h1>{total}</h1>
+                      <h3>RELACIÓN DE ACERO</h3><h1>{total}</h1>
                     </div>
                     <div>
-                      <h3>DOSIFICACIÓN EQUIVALENTE</h3><h1>{total}</h1>
+                      <h3>DOSIFICACIÓN MACROFIBRAS</h3><h1>{dosificacion} kg/m<sup>3</sup></h1>
                     </div>
                   </div>
                   <div className="resultados">
