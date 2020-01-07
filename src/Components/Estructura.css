@@ -1,3 +1,7 @@
+.wpestructuras {
+  width: 100%;
+  padding: 10px 90px;
+}
 .wpestructuras h1 {
   font-size: 0.9em !important;
 }

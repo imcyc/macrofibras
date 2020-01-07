@@ -1,0 +1,24 @@
+.resultados {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.resultados div {
+  padding: 10px;
+  margin: 3px 10px;
+  background: rgba(38,54,70,0.9);
+  box-shadow: 0 0 5px #333;
+  flex: 1;
+}
+
+.resultados div h3 {
+  font-size: 0.8em !important;
+}
+
+.resultados div h1 {
+  font-size: 1.5em !important;
+  font-weight: 800;
+  color: #ea8823;
+}

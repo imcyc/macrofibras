@@ -17,8 +17,6 @@ import './App.css';
 function App() {
   const [ tituloEstructura ] =  useState("¿QUE TIPO DE ESTRUCTURA VA A ELABORAR?");
   const [ valorAcero, setValorAcero ] = useState();
-  const [ espesor, setEspesor ] = useState(0);
-  const [ resistencia, setResistencia ] = useState();
   
   const secciones = [
     {
@@ -63,12 +61,6 @@ function App() {
     setValorAcero(e.target.value)
   }
 
-  const calcularDosificacion = (e) => {
-    e.preventDefault();
-    setEspesor(e.target.espesor.value);
-    console.log('espesor ' + espesor);
-  }
-
   return (
     <div className="App">
       <header className="App-header">
@@ -106,7 +98,6 @@ function App() {
                 component={(props) => <Calcular
                   tipoMalla={tipoMalla}
                   valorAcero={valorAcero}
-                  calcularDosificacion={calcularDosificacion}
                   {...props}
                 />}
               />
