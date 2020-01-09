@@ -76,6 +76,42 @@ function App() {
       setTipoSeparacion(473)
     } else if( valorVarilla == 3 && e.target.value == 20 ){
       setTipoSeparacion(355)
+    } else if( valorVarilla == 3 && e.target.value == 25 ){
+      setTipoSeparacion(284)
+    } else if( valorVarilla == 3 && e.target.value == 30 ){
+      setTipoSeparacion(237)
+    } else if( valorVarilla == 3 && e.target.value == 35 ){
+      setTipoSeparacion(203)
+    } else if( valorVarilla == 4 && e.target.value == 15 ){
+      setTipoSeparacion(847)
+    } else if( valorVarilla == 4 && e.target.value == 20 ){
+      setTipoSeparacion(635)
+    } else if( valorVarilla == 4 && e.target.value == 25 ){
+      setTipoSeparacion(508)
+    } else if( valorVarilla == 4 && e.target.value == 30 ){
+      setTipoSeparacion(423)
+    } else if( valorVarilla == 4 && e.target.value == 35 ){
+      setTipoSeparacion(363)
+    } else if( valorVarilla == 5 && e.target.value == 15 ){
+      setTipoSeparacion(1320)
+    } else if( valorVarilla == 5 && e.target.value == 20 ){
+      setTipoSeparacion(990)
+    } else if( valorVarilla == 5 && e.target.value == 25 ){
+      setTipoSeparacion(792)
+    } else if( valorVarilla == 5 && e.target.value == 30 ){
+      setTipoSeparacion(660)
+    } else if( valorVarilla == 5 && e.target.value == 35 ){
+      setTipoSeparacion(566)
+    } else if( valorVarilla == 6 && e.target.value == 15 ){
+      setTipoSeparacion(1900)
+    } else if( valorVarilla == 6 && e.target.value == 20 ){
+      setTipoSeparacion(1425)
+    } else if( valorVarilla == 6 && e.target.value == 25 ){
+      setTipoSeparacion(1140)
+    } else if( valorVarilla == 6 && e.target.value == 30 ){
+      setTipoSeparacion(950)
+    } else if( valorVarilla == 6 && e.target.value == 35 ){
+      setTipoSeparacion(814)
     }
   }
 
