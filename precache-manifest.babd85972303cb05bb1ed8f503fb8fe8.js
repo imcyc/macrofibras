@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ba67c04df0019ef8473e92e519bd0ea",
+    "revision": "dab860a9a313f22d906d9ab669720f2e",
     "url": "/macrofibras/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "c070e86acef0c4ec9697",
+    "revision": "8a706006fc4b37515d62",
     "url": "/macrofibras/static/css/main.f7806da9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/js/2.906c37cb.chunk.js"
   },
   {
-    "revision": "c070e86acef0c4ec9697",
-    "url": "/macrofibras/static/js/main.8f2612fe.chunk.js"
+    "revision": "8a706006fc4b37515d62",
+    "url": "/macrofibras/static/js/main.9a29598d.chunk.js"
   },
   {
     "revision": "2726681bc3013b169361",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/media/calculadora2020.51673e32.png"
   },
   {
-    "revision": "4956a05f3fd6d528c91d24ddb6bc226e",
-    "url": "/macrofibras/static/media/capas_compresion.4956a05f.jpg"
+    "revision": "9b2b7ed0fe734643baf9dd2bc848aecc",
+    "url": "/macrofibras/static/media/capas_compresion.9b2b7ed0.jpg"
   },
   {
     "revision": "8d68c4d6713d87bb0ae97f880a23658a",
