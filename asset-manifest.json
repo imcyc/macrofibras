@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/macrofibras/static/css/main.2f25c795.chunk.css",
-    "main.js": "/macrofibras/static/js/main.768a340f.chunk.js",
-    "main.js.map": "/macrofibras/static/js/main.768a340f.chunk.js.map",
+    "main.css": "/macrofibras/static/css/main.d3396652.chunk.css",
+    "main.js": "/macrofibras/static/js/main.7bee2a9d.chunk.js",
+    "main.js.map": "/macrofibras/static/js/main.7bee2a9d.chunk.js.map",
     "runtime-main.js": "/macrofibras/static/js/runtime-main.9d39a23d.js",
     "runtime-main.js.map": "/macrofibras/static/js/runtime-main.9d39a23d.js.map",
     "static/css/2.17e5ed98.chunk.css": "/macrofibras/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.1669881d.chunk.js": "/macrofibras/static/js/2.1669881d.chunk.js",
-    "static/js/2.1669881d.chunk.js.map": "/macrofibras/static/js/2.1669881d.chunk.js.map",
+    "static/js/2.aad42f1e.chunk.js": "/macrofibras/static/js/2.aad42f1e.chunk.js",
+    "static/js/2.aad42f1e.chunk.js.map": "/macrofibras/static/js/2.aad42f1e.chunk.js.map",
     "index.html": "/macrofibras/index.html",
-    "precache-manifest.aabb18d9927cf26902ef9d04483711e7.js": "/macrofibras/precache-manifest.aabb18d9927cf26902ef9d04483711e7.js",
+    "precache-manifest.e929862c6d480f9b2e0cf81f0bd526b4.js": "/macrofibras/precache-manifest.e929862c6d480f9b2e0cf81f0bd526b4.js",
     "service-worker.js": "/macrofibras/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/macrofibras/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.2f25c795.chunk.css.map": "/macrofibras/static/css/main.2f25c795.chunk.css.map",
+    "static/css/main.d3396652.chunk.css.map": "/macrofibras/static/css/main.d3396652.chunk.css.map",
+    "static/media/LOGOTexto.svg": "/macrofibras/static/media/LOGOTexto.bd4cd77f.svg",
+    "static/media/calculadora2020.png": "/macrofibras/static/media/calculadora2020.51673e32.png",
     "static/media/capas_compresion.jpg": "/macrofibras/static/media/capas_compresion.4956a05f.jpg",
     "static/media/logo-imcyc.svg": "/macrofibras/static/media/logo-imcyc.8d68c4d6.svg",
     "static/media/losas_cimentacion.jpg": "/macrofibras/static/media/losas_cimentacion.e31835d3.jpg",
@@ -25,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.9d39a23d.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.1669881d.chunk.js",
-    "static/css/main.2f25c795.chunk.css",
-    "static/js/main.768a340f.chunk.js"
+    "static/js/2.aad42f1e.chunk.js",
+    "static/css/main.d3396652.chunk.css",
+    "static/js/main.7bee2a9d.chunk.js"
   ]
 }

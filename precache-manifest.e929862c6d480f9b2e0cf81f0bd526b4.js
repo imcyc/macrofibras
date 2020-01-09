@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e923342dc2943155c0d3d523dbce517",
+    "revision": "f511eabb9684509dc10e4767293010f0",
     "url": "/macrofibras/index.html"
   },
   {
-    "revision": "8706f416030c92c94138",
+    "revision": "4daf32cff943139d0087",
     "url": "/macrofibras/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "e4bdd33b5fe51719c7d2",
-    "url": "/macrofibras/static/css/main.2f25c795.chunk.css"
+    "revision": "2ac2a0018d721bd66c47",
+    "url": "/macrofibras/static/css/main.d3396652.chunk.css"
   },
   {
-    "revision": "8706f416030c92c94138",
-    "url": "/macrofibras/static/js/2.1669881d.chunk.js"
+    "revision": "4daf32cff943139d0087",
+    "url": "/macrofibras/static/js/2.aad42f1e.chunk.js"
   },
   {
-    "revision": "e4bdd33b5fe51719c7d2",
-    "url": "/macrofibras/static/js/main.768a340f.chunk.js"
+    "revision": "2ac2a0018d721bd66c47",
+    "url": "/macrofibras/static/js/main.7bee2a9d.chunk.js"
   },
   {
     "revision": "2726681bc3013b169361",
     "url": "/macrofibras/static/js/runtime-main.9d39a23d.js"
+  },
+  {
+    "revision": "bd4cd77f78ddab5a0487d310f2704ce1",
+    "url": "/macrofibras/static/media/LOGOTexto.bd4cd77f.svg"
+  },
+  {
+    "revision": "51673e322c89fd857e6d772331594051",
+    "url": "/macrofibras/static/media/calculadora2020.51673e32.png"
   },
   {
     "revision": "4956a05f3fd6d528c91d24ddb6bc226e",
