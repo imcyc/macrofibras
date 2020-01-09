@@ -17,6 +17,9 @@ import './App.css';
 function App() {
   const [ tituloEstructura ] =  useState("¿QUE TIPO DE ESTRUCTURA VA A ELABORAR?");
   const [ valorAcero, setValorAcero ] = useState();
+  const [ valorVarilla, setValorVarilla ] = useState();
+  const [ valorEmparrillado, setValorEmparrillado ] = useState();
+  const [ tipoSeparacion, setTipoSeparacion ] = useState();
   
   const secciones = [
     {
@@ -61,6 +64,21 @@ function App() {
     setValorAcero(e.target.value)
   }
 
+  const tipoVarilla= (e) => {
+    e.preventDefault();
+    setValorVarilla(e.target.value)
+  }
+
+  const tipoSeparacionValor= (e) => {
+    e.preventDefault();
+    setValorEmparrillado(e.target.value);
+    if( valorVarilla == 3 && e.target.value == 15 ){
+      setTipoSeparacion(473)
+    } else if( valorVarilla == 3 && e.target.value == 20 ){
+      setTipoSeparacion(355)
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -98,6 +116,11 @@ function App() {
                 component={(props) => <Calcular
                   tipoMalla={tipoMalla}
                   valorAcero={valorAcero}
+                  tipoVarilla={tipoVarilla}
+                  valorVarilla={valorVarilla}
+                  tipoSeparacionValor={tipoSeparacionValor}
+                  tipoSeparacion={tipoSeparacion}
+                  valorEmparrillado={valorEmparrillado}
                   {...props}
                 />}
               />
