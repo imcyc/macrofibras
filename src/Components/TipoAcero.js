@@ -1,11 +1,12 @@
 import React from 'react';
 import Titulo from './Titulo';
 import SeccionAcero from './SeccionAcero';
+import LOGOTexto from '../images/LOGOTexto.svg';
 
 function TipoAcero(props) {
   return(
     <div className="wpestructuras">
-      <Titulo tituloEstructura={props.titulo} />
+      <img src={LOGOTexto} alt="Logo" className="mb-3 mt-3" style={{width: '90%'}} />
       <h2 style={{color: '#ea8823'}}>{props.match.params.tipo}</h2>
       <hr/>
       <div className="estructuras">

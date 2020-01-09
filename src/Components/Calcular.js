@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Titulo from './Titulo';
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form';
+import LOGOTexto from '../images/LOGOTexto.svg';
 import './Calcular.css';
 
 function Calcular(props) {
@@ -19,15 +20,63 @@ function Calcular(props) {
 
   const calcularDosificacion = (e) => {
     e.preventDefault();
+    let resUno = ((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7);
+    let resDos = (((Number(resUno) * 491 / 6 * Math.sqrt(resistencia))/10).toFixed(2));
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
-
-    setDosificacion(((0.012 * 491 / 6 * Number(resistencia))/10).toFixed(2));
-
+    if(resDos > 0 && resDos <= 9){
+      setDosificacion('1.0');
+    } else if(resDos > 9 && resDos < 15){
+      setDosificacion('1.6');
+    } else if(resDos > 15 && resDos < 20){
+      setDosificacion('2.0');
+    } else if(resDos > 20 && resDos < 25){
+      setDosificacion('2.5');
+    } else if(resDos > 25 && resDos < 30){
+      setDosificacion('3.0');
+    } else if(resDos > 30 && resDos < 35){
+      setDosificacion('3.5');
+    } else if(resDos > 35 && resDos < 40){
+      setDosificacion('4.0');
+    } else if(resDos > 40 && resDos < 45){
+      setDosificacion('4.5');
+    } else if(resDos > 45 && resDos < 50){
+      setDosificacion('5.0');
+    } else if(resDos > 50 && resDos < 55){
+      setDosificacion('5.5');
+    } else if(resDos > 55 && resDos < 60){
+      setDosificacion('6.0');
+    } else if(resDos > 60 && resDos < 65){
+      setDosificacion('6.5');
+    } else if(resDos > 65 && resDos < 70){
+      setDosificacion('7.0');
+    } else if(resDos > 70 && resDos < 75){
+      setDosificacion('7.5');
+    } else if(resDos > 75 && resDos < 80){
+      setDosificacion('8.0');
+    } else if(resDos > 80 && resDos < 85){
+      setDosificacion('8.5');
+    } else if(resDos > 85 && resDos < 90){
+      setDosificacion('9.0');
+    } else if(resDos > 90 && resDos < 95){
+      setDosificacion('9.5');
+    } else if(resDos > 95 && resDos < 100){
+      setDosificacion('10.0');
+    } else if(resDos > 100 && resDos < 105){
+      setDosificacion('10.5');
+    } else if(resDos > 105 && resDos < 110){
+      setDosificacion('11.0');
+    } else if(resDos > 110 && resDos < 115){
+      setDosificacion('11.5');
+    } else if(resDos > 115 && resDos < 120){
+      setDosificacion('12.0');
+    }
+    //setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
+    //setDosificacion(((0.012 * 491 / 6 * Number(resistencia))/10).toFixed(2));
   }
 
   return(
     <div className="wpestructuras">
-      <Titulo tituloEstructura={props.titulo} />
+      <img src={LOGOTexto} alt="Logo" className="mb-3 mt-3" style={{width: '90%'}} />
       <h2 style={{color: '#dedede'}}>{eltipo}</h2>
       <h2 style={{color: '#ea8823'}}>{acero}</h2>
       {/*
