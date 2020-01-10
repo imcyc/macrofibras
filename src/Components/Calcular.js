@@ -11,6 +11,7 @@ function Calcular(props) {
   const [ espesor, setEspesor ] = useState(0);
   const [ resistencia, setResistencia ] = useState(0);
   const [ resisDos, setResisDos ] = useState(0);
+  const [ resisDosVarilla, setResisDosVarilla ] = useState(0);
   const [ total, setTotal ] = useState(0);
   const [ dosificacion, setDosificacion ] = useState(0);
   const [ areaVarilla, setAreaVarilla ] = useState(0);
@@ -18,57 +19,60 @@ function Calcular(props) {
   const calcularDosificacion = (e) => {
     e.preventDefault();
 
-    let resUno = ((Number(props.valorAcero) / Number(espesor) * 100)/100000).toFixed(7);
-    let resDos = (((Number(resUno) * 491 / (6 * (Math.sqrt(resistencia/10)))) * 100)).toFixed(2);
+    
+    
+    let resUnoDosificacion = ((Number(props.valorAcero) / Number(espesor) * 100)/100000).toFixed(7);
 
-    setResisDos(resDos);
+    let resDosDosificacion = (((Number(resUnoDosificacion) * 491 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
+
+    setResisDos(resDosDosificacion);
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
 
-    if(resDos > 0 && resDos <= 9){
+    if(resDosDosificacion > 0 && resDosDosificacion <= 9){
       setDosificacion('1.0');
-    } else if(resDos > 9 && resDos <= 15){
+    } else if(resDosDosificacion > 9 && resDosDosificacion <= 15){
       setDosificacion('1.6');
-    } else if(resDos > 15 && resDos <= 20){
+    } else if(resDosDosificacion > 15 && resDosDosificacion <= 20){
       setDosificacion('2.0');
-    } else if(resDos > 20 && resDos <= 25){
+    } else if(resDosDosificacion > 20 && resDosDosificacion <= 25){
       setDosificacion('2.5');
-    } else if(resDos > 25 && resDos <= 30){
+    } else if(resDosDosificacion > 25 && resDosDosificacion <= 30){
       setDosificacion('3.0');
-    } else if(resDos > 30 && resDos <= 35){
+    } else if(resDosDosificacion > 30 && resDosDosificacion <= 35){
       setDosificacion('3.5');
-    } else if(resDos > 35 && resDos <= 40){
+    } else if(resDosDosificacion > 35 && resDosDosificacion <= 40){
       setDosificacion('4.0');
-    } else if(resDos > 40 && resDos <= 45){
+    } else if(resDosDosificacion > 40 && resDosDosificacion <= 45){
       setDosificacion('4.5');
-    } else if(resDos > 45 && resDos <= 50){
+    } else if(resDosDosificacion > 45 && resDosDosificacion <= 50){
       setDosificacion('5.0');
-    } else if(resDos > 50 && resDos <= 55){
+    } else if(resDosDosificacion > 50 && resDosDosificacion <= 55){
       setDosificacion('5.5');
-    } else if(resDos > 55 && resDos <= 60){
+    } else if(resDosDosificacion > 55 && resDosDosificacion <= 60){
       setDosificacion('6.0');
-    } else if(resDos > 60 && resDos <= 65){
+    } else if(resDosDosificacion > 60 && resDosDosificacion <= 65){
       setDosificacion('6.5');
-    } else if(resDos > 65 && resDos <= 70){
+    } else if(resDosDosificacion > 65 && resDosDosificacion <= 70){
       setDosificacion('7.0');
-    } else if(resDos > 70 && resDos <= 75){
+    } else if(resDosDosificacion > 70 && resDosDosificacion <= 75){
       setDosificacion('7.5');
-    } else if(resDos > 75 && resDos <= 80){
+    } else if(resDosDosificacion > 75 && resDosDosificacion <= 80){
       setDosificacion('8.0');
-    } else if(resDos > 80 && resDos <= 85){
+    } else if(resDosDosificacion > 80 && resDosDosificacion <= 85){
       setDosificacion('8.5');
-    } else if(resDos > 85 && resDos <= 90){
+    } else if(resDosDosificacion > 85 && resDosDosificacion <= 90){
       setDosificacion('9.0');
-    } else if(resDos > 90 && resDos <= 95){
+    } else if(resDosDosificacion > 90 && resDosDosificacion <= 95){
       setDosificacion('9.5');
-    } else if(resDos > 95 && resDos <= 100){
+    } else if(resDosDosificacion > 95 && resDosDosificacion <= 100){
       setDosificacion('10.0');
-    } else if(resDos > 100 && resDos <= 105){
+    } else if(resDosDosificacion > 100 && resDosDosificacion <= 105){
       setDosificacion('10.5');
-    } else if(resDos > 105 && resDos <= 110){
+    } else if(resDosDosificacion > 105 && resDosDosificacion <= 110){
       setDosificacion('11.0');
-    } else if(resDos > 110 && resDos <= 115){
+    } else if(resDosDosificacion > 110 && resDosDosificacion <= 115){
       setDosificacion('11.5');
-    } else if(resDos > 115 && resDos <= 120){
+    } else if(resDosDosificacion > 115 && resDosDosificacion <= 120){
       setDosificacion('12.0');
     }
     //setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
@@ -82,60 +86,57 @@ function Calcular(props) {
   const calcularDosificacionVarilla = (e) => {
     e.preventDefault();
 
-    let resUno = ((Number(props.tipoSeparacion) / Number(espesor) * 100)/100000).toFixed(7);
+    let resUnoVarilla = ((Number(props.tipoSeparacion) / Number(espesor) * 100)/100000).toFixed(7);
+    let resDosVarilla = (((Number(resUnoVarilla) * 412 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
 
-    console.log('elresuni: ' + resUno);
-
-    let resDos = (((Number(resUno) * 412 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
-
-    setResisDos(resDos);
+    setResisDosVarilla(resDosVarilla);
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
 
-    if(resDos > 0 && resDos <= 9){
+    if(resDosVarilla > 0 && resDosVarilla <= 9){
       setDosificacion('1.0');
-    } else if(resDos > 9 && resDos <= 15){
+    } else if(resDosVarilla > 9 && resDosVarilla <= 15){
       setDosificacion('1.6');
-    } else if(resDos > 15 && resDos <= 20){
+    } else if(resDosVarilla > 15 && resDosVarilla <= 20){
       setDosificacion('2.0');
-    } else if(resDos > 20 && resDos <= 25){
+    } else if(resDosVarilla > 20 && resDosVarilla <= 25){
       setDosificacion('2.5');
-    } else if(resDos > 25 && resDos <= 30){
+    } else if(resDosVarilla > 25 && resDosVarilla <= 30){
       setDosificacion('3.0');
-    } else if(resDos > 30 && resDos <= 35){
+    } else if(resDosVarilla > 30 && resDosVarilla <= 35){
       setDosificacion('3.5');
-    } else if(resDos > 35 && resDos <= 40){
+    } else if(resDosVarilla > 35 && resDosVarilla <= 40){
       setDosificacion('4.0');
-    } else if(resDos > 40 && resDos <= 45){
+    } else if(resDosVarilla > 40 && resDosVarilla <= 45){
       setDosificacion('4.5');
-    } else if(resDos > 45 && resDos <= 50){
+    } else if(resDosVarilla > 45 && resDosVarilla <= 50){
       setDosificacion('5.0');
-    } else if(resDos > 50 && resDos <= 55){
+    } else if(resDosVarilla > 50 && resDosVarilla <= 55){
       setDosificacion('5.5');
-    } else if(resDos > 55 && resDos <= 60){
+    } else if(resDosVarilla > 55 && resDosVarilla <= 60){
       setDosificacion('6.0');
-    } else if(resDos > 60 && resDos <= 65){
+    } else if(resDosVarilla > 60 && resDosVarilla <= 65){
       setDosificacion('6.5');
-    } else if(resDos > 65 && resDos <= 70){
+    } else if(resDosVarilla > 65 && resDosVarilla <= 70){
       setDosificacion('7.0');
-    } else if(resDos > 70 && resDos <= 75){
+    } else if(resDosVarilla > 70 && resDosVarilla <= 75){
       setDosificacion('7.5');
-    } else if(resDos > 75 && resDos <= 80){
+    } else if(resDosVarilla > 75 && resDosVarilla <= 80){
       setDosificacion('8.0');
-    } else if(resDos > 80 && resDos <= 85){
+    } else if(resDosVarilla > 80 && resDosVarilla <= 85){
       setDosificacion('8.5');
-    } else if(resDos > 85 && resDos <= 90){
+    } else if(resDosVarilla > 85 && resDosVarilla <= 90){
       setDosificacion('9.0');
-    } else if(resDos > 90 && resDos <= 95){
+    } else if(resDosVarilla > 90 && resDosVarilla <= 95){
       setDosificacion('9.5');
-    } else if(resDos > 95 && resDos <= 100){
+    } else if(resDosVarilla > 95 && resDosVarilla <= 100){
       setDosificacion('10.0');
-    } else if(resDos > 100 && resDos <= 105){
+    } else if(resDosVarilla > 100 && resDosVarilla <= 105){
       setDosificacion('10.5');
-    } else if(resDos > 105 && resDos <= 110){
+    } else if(resDosVarilla > 105 && resDosVarilla <= 110){
       setDosificacion('11.0');
-    } else if(resDos > 110 && resDos <= 115){
+    } else if(resDosVarilla > 110 && resDosVarilla <= 115){
       setDosificacion('11.5');
-    } else if(resDos > 115 && resDos <= 120){
+    } else if(resDosVarilla > 115 && resDosVarilla <= 120){
       setDosificacion('12.0');
     }
     //setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
@@ -219,12 +220,6 @@ function Calcular(props) {
           }
         </div>
         <div style={{width:'100%'}}>
-
-
-
-          
-
-
 
           {props.valorAcero ? 
             <div>
@@ -312,7 +307,7 @@ function Calcular(props) {
                 <div>
                   <div className="resultados">
                     <div>
-                      <h3>RESISTENCIA RESIDUAL NMX C-535</h3><h1>{resisDos} %</h1>
+                      <h3>RESISTENCIA RESIDUAL NMX C-535</h3><h1>{resisDosVarilla} %</h1>
                     </div>
                     <div>
                       <h3>DOSIFICACIÓN MACROFIBRAS</h3><h1>{dosificacion} kg/m<sup>3</sup></h1>
