@@ -285,6 +285,7 @@ function Calcular(props) {
             <div>
               <h2>Área de acero en mm<sup>2</sup>/m:</h2>
               <h5 style={{fontWeight: 'bold',fontSize:'2em'}}>{areaVarilla}</h5>
+              <hr/>
               {total === 0 ? 
                 <Form onSubmit={calcularDosificacionVarilla}>
                   <Form.Group controlId="formBasicEspesor">
