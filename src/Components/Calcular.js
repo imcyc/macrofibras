@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Titulo from './Titulo';
+import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form';
 import LOGOTexto from '../images/LOGOTexto.svg';
@@ -13,7 +13,6 @@ function Calcular(props) {
   const [ resisDos, setResisDos ] = useState(0);
   const [ total, setTotal ] = useState(0);
   const [ dosificacion, setDosificacion ] = useState(0);
-  
   const [ areaVarilla, setAreaVarilla ] = useState(0);
 
   const calcularDosificacion = (e) => {
@@ -84,7 +83,10 @@ function Calcular(props) {
     e.preventDefault();
 
     let resUno = ((Number(props.tipoSeparacion) / Number(espesor) * 100)/100000).toFixed(7);
-    let resDos = (((Number(resUno) * 412 / (6 * (Math.sqrt(resistencia/10)))) * 100)).toFixed(2);
+
+    console.log('elresuni: ' + resUno);
+
+    let resDos = (((Number(resUno) * 412 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
 
     setResisDos(resDos);
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
@@ -142,7 +144,10 @@ function Calcular(props) {
   
   return(
     <div className="wpestructuras">
-      <img src={LOGOTexto} alt="Logo" className="mb-3 mt-3" style={{width: '90%'}} />
+      <Link to="/">
+        <img src={LOGOTexto} alt="Logo" className="mb-3 mt-3" style={{width: '90%'}} />
+      </Link>
+      
       <h2 style={{color: '#dedede'}}>{eltipo}</h2>
       <h2 style={{color: '#ea8823'}}>{acero}</h2>
       {/*
@@ -155,7 +160,7 @@ function Calcular(props) {
           <Form>
               {props.valorVarilla ? 
                 <div>
-                  <h2><i className="lni-check-mark-circle"></i> VARILLA SELECCIONADA # {props.valorVarilla}</h2> 
+                  <h2 style={{fontWeight: '100'}}><i className="lni-check-mark-circle"></i> VARILLA SELECCIONADA:<br/><span style={{color: '#fff', fontSize: '1em', fontWeight: '800'}}># {props.valorVarilla}</span></h2>
                   <hr/>
                 </div>
                 :
@@ -192,7 +197,7 @@ function Calcular(props) {
             <Form>
               {props.tipoSeparacion ?
               <div>
-                <h2><i className="lni-check-mark-circle"></i> SEPARACIÓN DEL EMPARRILLADO DE {props.valorEmparrillado} CM</h2> 
+                <h2 style={{fontWeight: '100'}}><i className="lni-check-mark-circle"></i> SEPARACIÓN DEL EMPARRILLADO DE:<br/><span style={{color: '#fff', fontSize: '1em',fontWeight: '800'}}>{props.valorEmparrillado} cm</span></h2>
                 <hr/>
               </div>
               :
@@ -276,7 +281,7 @@ function Calcular(props) {
             ''
           }
 
-          {areaVarilla ? 
+          {areaVarilla > 0 ? 
             <div>
               <h2>Área de acero en mm<sup>2</sup>/m:</h2>
               <h5 style={{fontWeight: 'bold',fontSize:'2em'}}>{areaVarilla}</h5>
