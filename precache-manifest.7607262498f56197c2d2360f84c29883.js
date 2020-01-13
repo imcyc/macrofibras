@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bfc7589aa00899438c32a00941d553f",
+    "revision": "c489f0ce89e964f56d1e296449d83850",
     "url": "/macrofibras/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "3eb5b71a4c2144ddc0a1",
+    "revision": "d96699c829e5d0d55746",
     "url": "/macrofibras/static/css/main.f7806da9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/macrofibras/static/js/2.029b6fd7.chunk.js"
   },
   {
-    "revision": "3eb5b71a4c2144ddc0a1",
-    "url": "/macrofibras/static/js/main.bb1a4fe4.chunk.js"
+    "revision": "d96699c829e5d0d55746",
+    "url": "/macrofibras/static/js/main.8534b585.chunk.js"
   },
   {
     "revision": "2726681bc3013b169361",
