@@ -206,11 +206,11 @@ function Calcular(props) {
                 <Form.Label className="mb-3"><b>SELECCIONE SEPARACIÓN DEL EMPARRILLADO EN CM:</b></Form.Label>
                 <Form.Control as="select" onChange={props.tipoSeparacionValor}>
                   <option>SELECCIONAR</option>
-                  <option value="15">15</option>
-                  <option value="20">20</option>
-                  <option value="25">25</option>
-                  <option value="30">30</option>
-                  <option value="35">35</option>
+                  <option value="15">15 cm</option>
+                  <option value="20">20 cm</option>
+                  <option value="25">25 cm</option>
+                  <option value="30">30 cm</option>
+                  <option value="35">35 cm</option>
                 </Form.Control>
               </Form.Group>
               }
