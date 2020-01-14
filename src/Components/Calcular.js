@@ -265,7 +265,7 @@ function Calcular(props) {
                   <div className="resultados">
                     <div>
                       <h2>NOTAS IMPORTANTES</h2>
-                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-2018.</p>
+                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-<span style={{color:'#ea8823'}}>2020</span>.</p>
                     </div>
                   </div>
                   <div className="resultados">
@@ -280,7 +280,6 @@ function Calcular(props) {
             : 
             ''
           }
-
           {areaVarilla > 0 ? 
             <div>
               <h2>Área de acero en mm<sup>2</sup>/m:</h2>
@@ -330,7 +329,7 @@ function Calcular(props) {
                   <div className="resultados">
                     <div>
                       <h2>NOTAS IMPORTANTES</h2>
-                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-2020.</p>
+                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-<span style={{color:'#ea8823'}}>2020</span>.</p>
                     </div>
                   </div>
                   <div className="resultados">
