@@ -115,6 +115,14 @@ function App() {
     }
   }
 
+  const borrarDatos = () => {
+    console.log('refrescar');
+    setValorAcero(0);
+    setValorVarilla(0);
+    setValorEmparrillado(0);
+    setTipoSeparacion(0);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -157,6 +165,7 @@ function App() {
                   tipoSeparacionValor={tipoSeparacionValor}
                   tipoSeparacion={tipoSeparacion}
                   valorEmparrillado={valorEmparrillado}
+                  borrarDatos={borrarDatos}
                   {...props}
                 />}
               />

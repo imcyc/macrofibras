@@ -8,9 +8,9 @@ import './Calcular.css';
 function Calcular(props) {
   const { eltipo, acero } = props.match.params;
 
-  const [ espesor, setEspesor ] = useState(0);
+  const [ espesor,     setEspesor ] = useState(0);
   const [ resistencia, setResistencia ] = useState(0);
-  const [ resisDos, setResisDos ] = useState(0);
+  const [ resisDos,    setResisDos ] = useState(0);
   const [ resisDosVarilla, setResisDosVarilla ] = useState(0);
   const [ total, setTotal ] = useState(0);
   const [ dosificacion, setDosificacion ] = useState(0);
@@ -18,16 +18,10 @@ function Calcular(props) {
 
   const calcularDosificacion = (e) => {
     e.preventDefault();
-
-    
-    
     let resUnoDosificacion = ((Number(props.valorAcero) / Number(espesor) * 100)/100000).toFixed(7);
-
     let resDosDosificacion = (((Number(resUnoDosificacion) * 491 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
-
     setResisDos(resDosDosificacion);
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
-
     if(resDosDosificacion > 0 && resDosDosificacion <= 9){
       setDosificacion('1.0');
     } else if(resDosDosificacion > 9 && resDosDosificacion <= 15){
@@ -81,17 +75,16 @@ function Calcular(props) {
 
   useEffect(() => {
       setAreaVarilla(props.tipoSeparacion);
+      console.log('refrescar');
+
   });
 
   const calcularDosificacionVarilla = (e) => {
     e.preventDefault();
-
     let resUnoVarilla = ((Number(props.tipoSeparacion) / Number(espesor) * 100)/100000).toFixed(7);
     let resDosVarilla = (((Number(resUnoVarilla) * 412 / (6 * (Math.sqrt(resistencia)))) * 100)).toFixed(2);
-
     setResisDosVarilla(resDosVarilla);
     setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
-
     if(resDosVarilla > 0 && resDosVarilla <= 9){
       setDosificacion('1.0');
     } else if(resDosVarilla > 9 && resDosVarilla <= 15){
@@ -142,10 +135,12 @@ function Calcular(props) {
     //setTotal(((props.valorAcero / Number(espesor) * 100)/1000000).toFixed(7));
     //setDosificacion(((0.012 * 491 / 6 * Number(resistencia))/10).toFixed(2));
   }
+
+  
   
   return(
     <div className="wpestructuras">
-      <Link to="/">
+      <Link to="/seleccionar-estructura" onClick={props.borrarDatos}>
         <img src={LOGOTexto} alt="Logo" className="mb-3 mt-3" style={{width: '90%'}} />
       </Link>
       
@@ -258,6 +253,16 @@ function Calcular(props) {
                     </div>
                   </div>
                   <div className="resultados">
+                    <div align="center">
+                    <button className="btn btn-default">
+                        <Link to="/seleccionar-estructura" onClick={props.borrarDatos} style={{color:'#000',fontWeight:'400'}}>
+                          CALCULAR OTRO ELEMENTO
+                        </Link>
+                      </button>
+                      
+                    </div>
+                  </div>
+                  <div className="resultados">
                     <div>
                       <h2>NOTAS IMPORTANTES</h2>
                       <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-2018.</p>
@@ -314,9 +319,18 @@ function Calcular(props) {
                     </div>
                   </div>
                   <div className="resultados">
+                    <div align="center">
+                    <button className="btn btn-default">
+                        <Link to="/seleccionar-estructura" onClick={props.borrarDatos} style={{color:'#000',fontWeight:'400'}}>
+                          CALCULAR OTRO ELEMENTO
+                        </Link>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="resultados">
                     <div>
                       <h2>NOTAS IMPORTANTES</h2>
-                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-2018.</p>
+                      <p>Estas dosificaciones corresponden a MACROFIBRAS validadas por su ingeniería y desempeño ductil por los laboratorios del Instituto Mexicano del Cemento y del Concreto, A.C. en el periodo 2016-2020.</p>
                     </div>
                   </div>
                   <div className="resultados">
