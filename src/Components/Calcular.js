@@ -296,7 +296,7 @@ function Calcular(props) {
                       name="resistencia" 
                       type="number" 
                       placeholder="Ingresar f'c en Kg/cm2"
-                      onChange={(e) => setResistencia(e.target.value)} 
+                      onChange={(e) => setResistencia((e.target.value/10))} 
                     />
                   </Form.Group>
                   <Button variant="primary" type="submit">
