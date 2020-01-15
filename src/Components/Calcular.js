@@ -226,6 +226,7 @@ function Calcular(props) {
                     <Form.Control 
                       name="espesor" 
                       type="number" 
+                      step="0.01"
                       placeholder="Espesor del elemento en cm" 
                       onChange={(e) => setEspesor(e.target.value)} 
                     />
@@ -234,6 +235,7 @@ function Calcular(props) {
                     <Form.Control 
                       name="resistencia" 
                       type="number" 
+                      step="0.01"
                       placeholder="Ingresar f'c en Kg/cm2"
                       onChange={(e) => setResistencia((e.target.value / 10))} 
                     />
@@ -291,6 +293,7 @@ function Calcular(props) {
                     <Form.Control 
                       name="espesor" 
                       type="number" 
+                      step="0.01"
                       placeholder="Espesor del elemento en cm" 
                       onChange={(e) => setEspesor(e.target.value)} 
                     />
@@ -299,6 +302,7 @@ function Calcular(props) {
                     <Form.Control 
                       name="resistencia" 
                       type="number" 
+                      step="0.01"
                       placeholder="Ingresar f'c en Kg/cm2"
                       onChange={(e) => setResistencia((e.target.value/10))} 
                     />

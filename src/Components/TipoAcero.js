@@ -1,5 +1,4 @@
 import React from 'react';
-import Titulo from './Titulo';
 import SeccionAcero from './SeccionAcero';
 import LOGOTexto from '../images/LOGOTexto.svg';
 

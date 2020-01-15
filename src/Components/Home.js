@@ -1,8 +1,6 @@
 import React from 'react';
-import Titulo from './Titulo';
 import calculadora2020 from '../images/calculadora2020.png';
 import {Link} from "react-router-dom";
-import Button from 'react-bootstrap/Button';
 
 function Home(props) {
   return (
